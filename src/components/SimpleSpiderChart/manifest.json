@@ -1,6 +1,7 @@
 {
   "displayName": "Simple Spider Chart",
-  "defaultWidth": 375,
+  "defaultWidth": 350,
+  "defaultHeight": 350,
   "components": "./index.js",
   "icon": "./thumbnail.png",
   "props": [
@@ -14,7 +15,7 @@
       "name": "titleColor",
       "displayName": "Select title text color",
       "type": "color",
-      "default": "#ffffff"
+      "default": "#000000"
     },
     {
       "name": "lineColor",
@@ -31,7 +32,8 @@
     {
       "name": "spokeValue1",
       "displayName": "Select value for 1st spoke",
-      "type": "number"
+      "type": "number",
+      "default": 1
     },
     {
       "name": "spokeTitle2",
@@ -42,7 +44,8 @@
     {
       "name": "spokeValue2",
       "displayName": "Select value for 2nd spoke",
-      "type": "number"
+      "type": "number",
+      "default": 2
     },
     {
       "name": "spokeTitle3",
@@ -53,7 +56,8 @@
     {
       "name": "spokeValue3",
       "displayName": "Select value for 3rd spoke",
-      "type": "number"
+      "type": "number",
+      "default": 3
     },
     {
       "name": "spokeTitle4",
@@ -61,11 +65,11 @@
       "type": "text",
       "default": "spoke4"
     },
-
     {
       "name": "spokeValue4",
       "displayName": "Select value for 4th spoke",
-      "type": "number"
+      "type": "number",
+      "default": 6
     },
     {
       "name": "spokeTitle5",
@@ -76,7 +80,8 @@
     {
       "name": "spokeValue5",
       "displayName": "Select value for 5th spoke",
-      "type": "number"
+      "type": "number",
+      "default": 3
     }
   ]
 }
