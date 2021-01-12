@@ -1,0 +1,43 @@
+{
+  "name": "spider-chart",
+  "description": "A 5 spoke spider chart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "github:krudos/adalo-spider-chart",
+  "author": "Rick Lennie",
+  "contributors": [
+    "Kenneth Rangel <kennethrc@gmail.com>",
+    "Rick Lennie <rgarcia@latamtechnologies.com>"
+  ],
+  "keywords": [
+    "react-native",
+    "adalo"
+  ],
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "adalo": {
+    "logo": "./logo.png",
+    "displayName": "Spider Chart",
+    "components": [
+      {
+        "name": "SimpleSpiderChart",
+        "manifest": "./src/components/SimpleSpiderChart/manifest.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "react-native-svg": "9.3.3"
+  },
+  "devDependencies": {
+    "@adalo/cli": "0.0.40",
+    "prettier": "2.2.1",
+    "react": "16.9.0",
+    "react-art": "16.6.0",
+    "react-dom": "16.9.0",
+    "react-native-web": "0.9.5"
+  }
+}
