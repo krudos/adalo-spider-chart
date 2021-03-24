@@ -1,5 +1,5 @@
-import React from "react";
-import { Circle, G, Text, Path, Polyline } from "react-native-svg";
+import React from 'react';
+import { Circle, G, Text, Path, Polyline } from 'react-native-svg';
 
 const polarToX = (angle, distance) => Math.cos(angle - Math.PI / 2) * distance;
 
@@ -7,8 +7,8 @@ const polarToY = (angle, distance) => Math.sin(angle - Math.PI / 2) * distance;
 
 const points = (points) => {
   return points
-    .map((point) => point[0].toFixed(4) + "," + point[1].toFixed(4))
-    .join(" ");
+    .map((point) => point[0].toFixed(4) + ',' + point[1].toFixed(4))
+    .join(' ');
 };
 
 const axis = (options) => (col, i) => (
@@ -45,7 +45,7 @@ const dot = (columns, options) => (chartData, i) => {
   }
   return columns.map((col) => {
     const val = data[col.key];
-    if ("number" !== typeof val) {
+    if ('number' !== typeof val) {
       throw new Error(`Data set ${i} is invalid.`);
     }
 
@@ -86,7 +86,7 @@ const shape = (columns, options) => (chartData, i) => {
       d={options.smoothing(
         columns.map((col) => {
           const val = data[col.key];
-          if ("number" !== typeof val) {
+          if ('number' !== typeof val) {
             throw new Error(`Data set ${i} is invalid.`);
           }
 
@@ -94,12 +94,12 @@ const shape = (columns, options) => (chartData, i) => {
             polarToX(col.angle, (val * options.chartSize) / 2),
             polarToY(col.angle, (val * options.chartSize) / 2),
           ];
-        })
+        }),
       )}
       {...extraProps}
       {...extraPropsSvg}
       stroke={meta.color}
-      fill={"none"}
+      fill={'none'}
     />
   );
 };
@@ -123,18 +123,17 @@ const caption = (options) => (col) => (
     x={polarToX(col.angle, (options.size / 2) * 0.95).toFixed(4)}
     y={polarToY(col.angle, (options.size / 2) * 0.95).toFixed(4)}
     dy={(options.captionProps(col).fontSize || 10) / 2}
-    {...options.captionProps(col)}
-  >
+    {...options.captionProps(col)}>
     {col.caption}
   </Text>
 );
 
 const render = (captions, chartData, options = {}) => {
-  if ("object" !== typeof captions || Array.isArray(captions)) {
-    throw new Error("caption must be an object");
+  if ('object' !== typeof captions || Array.isArray(captions)) {
+    throw new Error('caption must be an object');
   }
   if (!Array.isArray(chartData)) {
-    throw new Error("data must be an array");
+    throw new Error('data must be an array');
   }
   options.chartSize = options.size / options.zoomDistance;
 

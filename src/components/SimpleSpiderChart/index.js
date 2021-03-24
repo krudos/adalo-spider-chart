@@ -1,12 +1,12 @@
-import React, { useMemo } from "react";
-import { Text, View, StyleSheet } from "react-native";
-import RadarChart from "./RadarChart";
+import React, { useMemo } from 'react';
+import { Text, View, StyleSheet } from 'react-native';
+import RadarChart from './RadarChart';
 
 const styles = StyleSheet.create({
   wrapper: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
@@ -66,7 +66,7 @@ export const SimpleSpiderChart = (props) => {
         dataset2SpokeValue2,
         dataset2SpokeValue3,
         dataset2SpokeValue4,
-        dataset2SpokeValue5
+        dataset2SpokeValue5,
       );
     }
     return Math.max(...values);
@@ -102,11 +102,11 @@ export const SimpleSpiderChart = (props) => {
 
   const captions = useMemo(() => {
     return {
-      spoke1: spokeTitle1 || "",
-      spoke2: spokeTitle2 || "",
-      spoke3: spokeTitle3 || "",
-      spoke4: spokeTitle4 || "",
-      spoke5: spokeTitle5 || "",
+      spoke1: spokeTitle1 || '',
+      spoke2: spokeTitle2 || '',
+      spoke3: spokeTitle3 || '',
+      spoke4: spokeTitle4 || '',
+      spoke5: spokeTitle5 || '',
     };
   }, [titles]);
 

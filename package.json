@@ -17,7 +17,8 @@
   "scripts": {
     "start": "adalo dev",
     "login": "adalo login",
-    "publish": "adalo publish"
+    "publish": "adalo publish",
+    "format": "prettier --write ."
   },
   "adalo": {
     "logo": "./logo.png",
