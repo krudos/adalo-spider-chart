@@ -11,7 +11,8 @@ const noSmoothing = (points) => {
 };
 
 const setViewBox = (options) =>
-  `-${options.captionMargin} 0 ${options.size + options.captionMargin * 2} ${options.size
+  `-${options.captionMargin} 0 ${options.size + options.captionMargin * 2} ${
+    options.size
   }`;
 
 const defaultOptions = {
