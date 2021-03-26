@@ -123,8 +123,7 @@
       "displayName": "Dataset 2",
       "props": [
         {
-          "name": "enableDataset2",
-          "displayName": "Enabled",
+          "name": "enabled",
           "type": "boolean",
           "default": false
         },
@@ -132,55 +131,37 @@
           "name": "dataset2LineColor",
           "displayName": "Line Color",
           "type": "color",
-          "default": "@secondary",
-          "enabled": {
-            "enableDataset2": true
-          }
+          "default": "@secondary"
         },
         {
           "name": "dataset2SpokeValue1",
           "displayName": "First Spoke Value",
           "type": "number",
-          "default": 2,
-          "enabled": {
-            "enableDataset2": true
-          }
+          "default": 2
         },
         {
           "name": "dataset2SpokeValue2",
           "displayName": "Second Spoke Value",
           "type": "number",
-          "default": 3,
-          "enabled": {
-            "enableDataset2": true
-          }
+          "default": 3
         },
         {
           "name": "dataset2SpokeValue3",
           "displayName": "Third Spoke Value",
           "type": "number",
-          "default": 4,
-          "enabled": {
-            "enableDataset2": true
-          }
+          "default": 4
         },
         {
           "name": "dataset2SpokeValue4",
           "displayName": "Fourth Spoke Value",
           "type": "number",
-          "default": 5,
-          "enabled": {
-            "enableDataset2": true
-          }
+          "default": 5
         },
         {
           "name": "dataset2SpokeValue5",
           "displayName": "Fifth Spoke Value",
           "type": "number",
-          "default": 6,
-          "enabled": {
-            "enableDataset2": true
-          }
+          "default": 6
         }
       ]
     }
