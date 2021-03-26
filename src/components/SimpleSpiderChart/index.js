@@ -39,7 +39,7 @@ export const SimpleSpiderChart = (props) => {
   } = dataset1;
 
   const {
-    enableDataset2,
+    enabled: enableDataset2,
     dataset2LineColor,
     dataset2SpokeValue1,
     dataset2SpokeValue2,
