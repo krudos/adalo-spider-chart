@@ -1,7 +1,7 @@
 {
   "name": "spider-chart",
   "description": "A 5 spoke spider chart",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "license": "MIT",
   "repository": "github:krudos/adalo-spider-chart",

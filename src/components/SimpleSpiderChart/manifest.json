@@ -7,13 +7,13 @@
   "props": [
     {
       "name": "chartTitle",
-      "displayName": "Chart title",
+      "displayName": "Chart Title",
       "type": "text",
       "default": "Chart title"
     },
     {
       "name": "chartTitleColor",
-      "displayName": "Select title text color",
+      "displayName": "Title Text Color",
       "type": "color",
       "default": "@text"
     }
@@ -21,53 +21,53 @@
   "childComponents": [
     {
       "name": "titles",
-      "displayName": "Spoke titles",
+      "displayName": "Spoke Titles",
       "props": [
         {
           "name": "spokeTitle1",
-          "displayName": "Select title for 1st spoke",
+          "displayName": "First Spoke Title",
           "type": "text",
-          "default": "spoke 1 title"
+          "default": "Example 1"
         },
         {
           "name": "spokeTitle2",
-          "displayName": "Select title for 2nd spoke",
+          "displayName": "Second Spoke Title",
           "type": "text",
-          "default": "spoke 2 title"
+          "default": "Example 2"
         },
         {
           "name": "spokeTitle3",
-          "displayName": "Select title for 3rd spoke",
+          "displayName": "Third Spoke Title",
           "type": "text",
-          "default": "spoke 3 title"
+          "default": "Example 3"
         },
         {
           "name": "spokeTitle4",
-          "displayName": "Select title for 4th spoke",
+          "displayName": "Fourth Spoke Title",
           "type": "text",
-          "default": "spoke 4 title"
+          "default": "Example 4"
         },
         {
           "name": "spokeTitle5",
-          "displayName": "Select title for 5th spoke",
+          "displayName": "Fifth Spoke Title",
           "type": "text",
-          "default": "spoke 5 title"
+          "default": "Example 5"
         }
       ]
     },
     {
       "name": "scale",
-      "displayName": "Chart scale",
+      "displayName": "Chart Scale",
       "props": [
         {
           "name": "manualScaleEnable",
-          "displayName": "Use manual scale value",
+          "displayName": "Manual Scale",
           "type": "boolean",
           "default": false
         },
         {
           "name": "manualScaleValue",
-          "displayName": "Select manual max value",
+          "displayName": "Manual Scale Value",
           "type": "number",
           "default": 10,
           "enabled": {
@@ -82,37 +82,37 @@
       "props": [
         {
           "name": "dataset1LineColor",
-          "displayName": "Select line color",
+          "displayName": "Line Color",
           "type": "color",
           "default": "@primary"
         },
         {
           "name": "dataset1SpokeValue1",
-          "displayName": "Select value for 1st spoke",
+          "displayName": "First Spoke Value",
           "type": "number",
           "default": 1
         },
         {
           "name": "dataset1SpokeValue2",
-          "displayName": "Select value for 2nd spoke",
+          "displayName": "Second Spoke Value",
           "type": "number",
           "default": 1
         },
         {
           "name": "dataset1SpokeValue3",
-          "displayName": "Select value for 3rd spoke",
+          "displayName": "Third Spoke Value",
           "type": "number",
           "default": 1
         },
         {
           "name": "dataset1SpokeValue4",
-          "displayName": "Select value for 4th spoke",
+          "displayName": "Fourth Spoke Value",
           "type": "number",
           "default": 1
         },
         {
           "name": "dataset1SpokeValue5",
-          "displayName": "Select value for 5th spoke",
+          "displayName": "Fifth Spoke Value",
           "type": "number",
           "default": 1
         }
@@ -124,13 +124,13 @@
       "props": [
         {
           "name": "enableDataset2",
-          "displayName": "Enable dataset 2",
+          "displayName": "Enabled",
           "type": "boolean",
           "default": false
         },
         {
           "name": "dataset2LineColor",
-          "displayName": "Select line color",
+          "displayName": "Line Color",
           "type": "color",
           "default": "@secondary",
           "enabled": {
@@ -139,45 +139,45 @@
         },
         {
           "name": "dataset2SpokeValue1",
-          "displayName": "Select value for 1st spoke",
+          "displayName": "First Spoke Value",
           "type": "number",
-          "default": 1,
+          "default": 2,
           "enabled": {
             "enableDataset2": true
           }
         },
         {
           "name": "dataset2SpokeValue2",
-          "displayName": "Select value for 2nd spoke",
+          "displayName": "Second Spoke Value",
           "type": "number",
-          "default": 1,
+          "default": 3,
           "enabled": {
             "enableDataset2": true
           }
         },
         {
           "name": "dataset2SpokeValue3",
-          "displayName": "Select value for 3rd spoke",
+          "displayName": "Third Spoke Value",
           "type": "number",
-          "default": 1,
+          "default": 4,
           "enabled": {
             "enableDataset2": true
           }
         },
         {
           "name": "dataset2SpokeValue4",
-          "displayName": "Select value for 4th spoke",
+          "displayName": "Fourth Spoke Value",
           "type": "number",
-          "default": 1,
+          "default": 5,
           "enabled": {
             "enableDataset2": true
           }
         },
         {
           "name": "dataset2SpokeValue5",
-          "displayName": "Select value for 5th spoke",
+          "displayName": "Fifth Spoke Value",
           "type": "number",
-          "default": 1,
+          "default": 6,
           "enabled": {
             "enableDataset2": true
           }
