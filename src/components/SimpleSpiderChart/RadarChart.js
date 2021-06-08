@@ -11,8 +11,7 @@ const noSmoothing = (points) => {
 };
 
 const setViewBox = (options) =>
-  `-${options.captionMargin} 0 ${options.size + options.captionMargin * 2} ${
-    options.size
+  `-${options.captionMargin} 0 ${options.size + options.captionMargin * 2} ${options.size
   }`;
 
 const defaultOptions = {
@@ -52,7 +51,8 @@ const RadarChart = (props) => {
   const chart = radar(captions, data, chartOptions);
 
   return (
-    <Svg width={size} height={size}>
+    <Svg width={size} height={size}
+      viewBox={setViewBox(chartOptions)}>
       {chart}
     </Svg>
   );

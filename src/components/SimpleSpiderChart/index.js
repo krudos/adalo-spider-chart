@@ -7,10 +7,11 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingHorizontal: 100,
   },
 });
 
-export const SimpleSpiderChart = (props) => {
+const useSimpleSpiderChart = (props) => {
   const {
     chartTitle,
     chartTitleColor,
@@ -110,10 +111,21 @@ export const SimpleSpiderChart = (props) => {
     };
   }, [titles]);
 
+  return { charData, captions, width: _width, chartTitleColor, chartTitle };
+};
+
+export const SimpleSpiderChart = (props) => {
+  const {
+    charData,
+    captions,
+    width,
+    chartTitle,
+    chartTitleColor,
+  } = useSimpleSpiderChart(props);
   return (
     <View style={styles.wrapper}>
       <Text style={{ color: chartTitleColor }}>{chartTitle}</Text>
-      <RadarChart captions={captions} data={charData} size={_width} />
+      <RadarChart captions={captions} data={charData} size={width} />
     </View>
   );
 };
